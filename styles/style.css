@@ -175,7 +175,7 @@
     background-color:rgb(17, 17, 17);
 }
 .run-container{
-    background: rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
     width: 1000px auto;
     height: 370px;
     justify-content: space-between;
@@ -207,7 +207,7 @@
     height: 450px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(87, 82, 82);
+    background-color: rgb(34, 34, 34);
     padding: 20px 150px;
 }
 
@@ -218,6 +218,7 @@
 .bmi-calculetor-table{
     width: 577px;
     height: 386px;
+    padding-top: 60px;
 }
 .bmi-calculetor-table > h3{
     font-size: 28px;
@@ -229,15 +230,32 @@
     width: 310px;
     height: 210px;
 }
-
-.from-box > input{
+.from-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.from-box{
+    width: 47%;
+    margin-top: 10px;    
+    border-radius: 10px;
+}
+.from-container input, select{
+    width: 100%;
+    height: 30px;
+}
+.from-box-2{
+    width: 100%;
+    margin: 15px 0px;
+}
+/* .from-box > input{
     width: 200px;
     height: 30px;
 }
 .select-pointer{
     width: 200px;
     height: 30px;  
-}
+} */
 /* team out team */
 .meet-our-team{
     background-color:rgb(17, 17, 17);
