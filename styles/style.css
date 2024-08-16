@@ -338,9 +338,10 @@
     top: 50%;
     left: 7%;
    }
- .nav-item{
+ .nav-links{
     display: none;
  }
+ 
     /* habits */
     .habit{
         padding: 10px 0px;
