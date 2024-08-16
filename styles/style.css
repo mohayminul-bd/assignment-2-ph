@@ -37,10 +37,11 @@
 }
 
 /* nav bare */
-.brand-name{
-    font-weight: 800px;
-    font-size: 2.25rem;
-    color:rgb(230, 83, 60);
+.brand-logo{
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
 }
 .navbar{
     justify-content: space-between;
@@ -50,6 +51,9 @@
     list-style: none;
     margin: 20px;
 }
+.nav-item > a{
+    text-decoration: none;
+}
 .nav-link{
     text-decoration: none;
     font-size: 1.25rem;
@@ -58,6 +62,10 @@
 .nav-link-home{
     color: rgb(255, 255, 255);
 }
+ .nav-item-bar{
+    display: none;
+
+ }  
  
 .body{
     color:rgb(255, 255, 255);
@@ -65,6 +73,7 @@
 }
 /* header style */
 .header{
+    max-width: 1080px;
     padding: 20px 150px;
     background-color:rgb(17, 17, 17);
 }
@@ -141,42 +150,40 @@
     margin-left: 10px;
 }
 /* section change habits */
-.image-container{
-    margin-top: 50px;
+
+.habits-title > h2{
+    font-size: 48px;
+    font-weight: 900;
 }
-.habits{
-    padding: 20px 150px;
+.habit{
+    text-align: center;
+    max-width: 1080px;
+    height: 550px;
+    margin: 0 auto;
     background-color:rgb(17, 17, 17);
-    width: 1000px auto;
-    height: 450px;
+    padding: 80px 120px;
 }
-.habits-title{
-    text-align: center;
+.habit-images-container{
+    display: flex;
 }
-.habits-title > h3{
-    font-size: 35px;
-    font-weight: 900px;
+.habit-images{
+    padding: 20px;
 }
-.img-box{
-    height: 270px;
-    width: 230px;
-    text-align: center;
-    align-items: center;
-    margin: 0px 40px;
-}
-.img-box > img{
-    height: 120px;
-    width: 120px;
+.habit-images img{
     border-radius: 50%;
+    border:5px solid rgb(33, 32, 32) ;
+    width: 180px;
+    height: 170px;
 }
+
 /* section run */
 .run{
+    max-width: 1080px;
     padding: 80px 150px;
     background-color:rgb(17, 17, 17);
 }
 .run-container{
     background-color: rgb(34, 34, 34);
-    width: 1000px auto;
     height: 370px;
     justify-content: space-between;
     align-items: center;
@@ -196,14 +203,14 @@
 
 .bmi-calculetor{
     background-color:rgb(17, 17, 17);
-    margin-top: -20px;
-    width: 1000px auto;
+    margin-top: -40px;
+    padding-top: 20px;
 }
 .bmi-title{
     padding-bottom: 30px;
 }
 .bmi-container{
-    width: 1000px auto;
+    max-width: 1080px;
     height: 450px;
     justify-content: space-between;
     align-items: center;
@@ -248,18 +255,10 @@
     width: 100%;
     margin: 15px 0px;
 }
-/* .from-box > input{
-    width: 200px;
-    height: 30px;
-}
-.select-pointer{
-    width: 200px;
-    height: 30px;  
-} */
-/* team out team */
+/* meet your team */
 .meet-our-team{
     background-color:rgb(17, 17, 17);
-    width: 1000px auto;
+    max-width: 1080px;
     height: 730px;
     padding: 20px 150px;
 }
@@ -279,27 +278,169 @@
 }
 
 /*section footer */
-footer{
-    background-color: rgb(34, 34, 34);
-    width: 1000px auto;
-    height: 350px;
-    padding: 20px 150px;
+.footer{
+    background-color:black;
+    min-height: 430px;
 }
-.footer-container{
-    gap: 100px;
+
+.text-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
 }
-.footer-colum > h2{
-    font-size:50px;
-    font-weight: 800;
-    line-height: 20px;
-    color: rgb(230, 83, 60);
-}
-.footer-colum > ul > li, a{
-    list-style:none;
+
+.footer-link a{
+    font-size: 20px;
     text-decoration: none;
-    margin-bottom: 10px;
-    color: rgb(133, 127, 127);
+    margin-bottom: 15px;
 }
-.devoloper-data{
-    padding-top: 70px;
+
+.title2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.logo-text{
+    max-width:443px ;
+}
+
+.copyright-text{
+    max-width: 1060px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 40px 10px;
+}
+
+@media screen and (max-width:576px) {
+    
+    .header, .header-box, .image-container{
+        flex-direction: column;
+    }
+   .header{
+    padding: 0px;
+   }
+   .header-title, .header-img{
+    width: 100%;
+   }
+   .free-workout{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+   }
+   .video-tutorial{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+   }
+ .nav-item{
+    display: none;
+ }
+    /* habits */
+    .habit{
+        padding: 10px 0px;
+        margin-top:-40px;
+    }
+    .habit-images-container{
+        flex-direction: column;
+        background-color:rgb(17, 17, 17);
+    }
+    .habits-title{
+       padding: 20px 20px;
+    }
+    
+    /* section run */
+    .run{
+        margin-top: 1120px;
+        padding: 20px 10px ;
+    }
+    .run-container{
+        flex-direction: column;
+        margin: 20px;
+        width: 260px;
+        height: 600px;
+    }
+    .run-pic > img{
+        width: 280px;
+        height: 220px;
+    }
+    /* bmi-calculetor */
+    .bmi-calculetor{
+        height: 1000px;
+        background-color: black;
+    }
+    .bmi-calculetor-table{
+        width: 340px;
+        height: 100px auto;
+       
+    }
+    .bmi-container{
+        flex-direction: column;
+    }
+
+    .from-box{
+        margin-top: 10px;    
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: 400px;
+    }
+    .from-container input, select{
+        height: 40px;
+        width: 50px auto;
+    }
+    
+/* meet-our-team */
+.meet-our-team{
+    padding: 20px 20px;
+    height: 2100px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 20px;
+    background-color: rgb(34, 34, 34);
+    height: 1800px;
+}
+/* footer section */
+.text-container{
+    flex-direction: column;
+}
+
+    /* .skills-container, .resume-container, footer , .about-items, .banner, nav, nav > ul{
+        flex-direction: column;
+    }
+    nav > ul{
+        gap: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner-title{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .about{
+        padding: 20px;
+    }
+    footer{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .footer-colum{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    } */
 }
